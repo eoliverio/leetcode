@@ -1,6 +1,13 @@
 package main.array;
 
 public class SearchRotatedSortedArray {
+    /**
+     * Traverses the array by halves based on if the target can be found on the sorted half or not.
+     * 
+     * @param nums   base array
+     * @param target integer to search
+     * @return the minimum value in the array
+     */
     public int search(int[] nums, int target) {
         int left = 0, right = nums.length - 1;
 
@@ -46,6 +53,13 @@ public class SearchRotatedSortedArray {
         return -1;
     }
 
+    /**
+     * Brute force implementation: loop through the array until target value is found
+     * 
+     * @param nums   base array
+     * @param target integer to search
+     * @return the minimum value in the array
+     */
     public int searchBruteForce(int[] nums, int target) {
         int index = -1;
         for (int i = 0; i < nums.length; i++) {

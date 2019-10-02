@@ -1,10 +1,9 @@
 package main.array;
 
 public class MinimumRotatedSortedArray {
-
     /**
-     * This method basically traverses the array by halves until it finds two contiguous values where the previous value
-     * is greater than the latter.
+     * This method basically traverses the array by halves until it finds 
+     * two contiguous values where the previous value is greater than the latter.
      * 
      * @param nums base array
      * @return the minimum value in the array

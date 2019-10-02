@@ -2,8 +2,7 @@ package main.array;
 
 public class MaximumProductSubarray {
     /**
-     * 2 ms performance <br>
-     * Most readable answer
+     * Most readable answer <br>
      * This is also the common answer in LeetCode.
      * 
      * @param nums base array
@@ -37,7 +36,6 @@ public class MaximumProductSubarray {
     }
 
     /**
-     * 1 ms performance <br>
      * Best performance but less readable <br>
      * This is basically a manual implementation of the version using Math library methods. <br>
      * Understandably faster since there are less function calls

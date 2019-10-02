@@ -7,6 +7,18 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ThreeSum {
+    /**
+     * Finds all triplets in a list whose sum is equal to zero. <br>
+     * The algorithm is as follows: <br>
+     * 1.) Sort the array from lowest to highest <br>
+     * 2.) Traverse the array as the first number <br>
+     * 3.) 0 - first number = sum of the second and third numbers <br>
+     * 4.) Traverse the remainder array from both ends to the middle
+     *     to find two values whose sum is equal to number from step #3.
+     * 
+     * @param nums base array
+     * @return a list of triplets whose sum is equal to zero
+     */
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> results = new LinkedList<>();
 
@@ -39,8 +51,8 @@ public class ThreeSum {
                     results.add(Arrays.asList(nums[i], nums[L], nums[H]));
 
                     // skip duplicates
-                    while (L < H && nums[L] == nums[L + 1]) { L++; }
-                    while (L < H && nums[H] == nums[H - 1]) { H--; }
+                    while ( L < H && nums[L] == nums[L + 1] ) { L++; }
+                    while ( L < H && nums[H] == nums[H - 1] ) { H--; }
 
                     // numbers on L and H already used, so...
                     L++;
@@ -58,6 +70,12 @@ public class ThreeSum {
         return results;
     }
 
+    /**
+     * Brute force implementation: take all triplets whose sum is equal to zero (exclude if duplicate)
+     * 
+     * @param nums base array
+     * @return a list of triplets whose sum is equal to zero
+     */
     public List<List<Integer>> threeSumBruteForce(int[] nums) {
         List<List<Integer>> results = new ArrayList<List<Integer>>();
         Arrays.sort(nums);

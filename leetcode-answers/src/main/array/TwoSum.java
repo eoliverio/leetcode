@@ -1,14 +1,9 @@
 package main.array;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
-    public static void main(String[] args) {
-        System.out.println(Arrays.toString(new TwoSum().twoSum(new int[] {}, 0)));
-        System.out.println(Arrays.toString(new TwoSum().twoSumBruteForce(new int[] {}, 0)));
-    }
     /**
      * A hashmap is used to find the complement of the target minus the current element being traversed in the array.
      * 
