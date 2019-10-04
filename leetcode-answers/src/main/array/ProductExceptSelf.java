@@ -3,11 +3,6 @@ package main.array;
 import java.util.Arrays;
 
 public class ProductExceptSelf {
-    public static void main(String[] args) {
-        ProductExceptSelf pes = new ProductExceptSelf();
-        System.out.println(Arrays.toString(pes.productExceptSelf(new int[] { 1, 2, 3, 4 })));
-    }
-
     /**
      * <b>Problem statement:</b><br>
      * Given an array nums of n integers where n > 1, <br>
