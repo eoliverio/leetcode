@@ -1,7 +1,5 @@
 package main.array;
 
-import java.util.Arrays;
-
 public class ProductExceptSelf {
     /**
      * <b>Problem statement:</b><br>
